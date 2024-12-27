@@ -1,0 +1,80 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Budget Calculator</title>
+    <link href="(link unavailable)" rel="stylesheet">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result h2 {
+    margin-top: 0;
+}
+
+
+    </style>
+
+<body>
+    <div class="container mt-5">
+        <h1>Budget Calculator</h1>
+        <form>
+            <div class="mb-3">
+                <label for="salary" class="form-label">Monthly Salary:</label>
+                <input type="number" class="form-control" id="salary" required>
+            </div>
+            <div class="mb-3">
+                <label for="expenses" class="form-label">Monthly Expenses:</label>
+                <input type="number" class="form-control" id="expenses" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculateBudget()">Calculate</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="./setb5.js"></script>
+</body>
+</html>
+
